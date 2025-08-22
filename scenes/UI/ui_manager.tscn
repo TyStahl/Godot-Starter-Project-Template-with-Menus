@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dffjgjv0roau4"]
+
+[ext_resource type="Script" uid="uid://ctkqfbvrm70h7" path="res://scripts/ui_manager.gd" id="1_fo2ew"]
+[ext_resource type="PackedScene" uid="uid://dcs0we7xbfbt0" path="res://scenes/UI/main_menu.tscn" id="1_xyqvb"]
+[ext_resource type="PackedScene" uid="uid://cghuvom8vqcqt" path="res://scenes/UI/pause_menu.tscn" id="2_fo2ew"]
+[ext_resource type="PackedScene" uid="uid://gwfl3fafkij8" path="res://scenes/UI/options_menu.tscn" id="3_s0kab"]
+
+[node name="UIManager" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_fo2ew")
+
+[node name="MainMenu" parent="." instance=ExtResource("1_xyqvb")]
+visible = false
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_fo2ew")]
+visible = false
+
+[node name="OptionsMenu" parent="." instance=ExtResource("3_s0kab")]
+visible = false

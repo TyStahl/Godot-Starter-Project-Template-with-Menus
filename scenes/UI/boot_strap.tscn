@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://4fbwlts16rgc"]
+
+[ext_resource type="Script" uid="uid://5ww2hffo5xys" path="res://scripts/boot_strap.gd" id="1_a7dtg"]
+[ext_resource type="PackedScene" uid="uid://w4np03jclrff" path="res://scenes/UI/splash.tscn" id="2_daklu"]
+
+[node name="BootStrap" type="Node"]
+script = ExtResource("1_a7dtg")
+
+[node name="Splash" parent="." instance=ExtResource("2_daklu")]
